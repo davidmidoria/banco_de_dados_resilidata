@@ -24,3 +24,40 @@ create table log_estudante(
     foreign key (id_estudante) references tb_estudante(id_estudante),
     foreign key (id_turma) references tb_turma(id_turma)
 );
+
+
+-- tabela para armazenar informacoes de estudante 
+create Table tb_estudante (
+  id_estudante serial primary key,
+  nome varchar(100) not null,
+  cpf varchar(14) not null,
+  data_nascimento date not null,
+  endereco varchar(200),
+  telefone varchar(20),
+  email varchar(100),
+  status_estudante varchar(20) default 'ativo',
+  data_matricula date,
+  data_atualizacao date
+);
+
+-- tabela para armazenar informacoes principais da turma
+
+create Table tb_turma (
+  id_turma serial primary key,
+  nome varchar(100) not null,
+  data_inicio date  not null,
+  data_termino date not null
+);
+
+-- tabela para armazenar de que turma o estudante faz parte foi escolhido uma entidade
+-- para armazenar uma ligacao por motivo de que um estudante poder fazer mais de um curso e um curso possuir
+--varios estudantes
+
+create table tb_estudante_turma(
+id_estudante_turma serial primary key,
+id_estudante int,
+id_turma int,
+unique(id_estudante,id_turma),
+foreign key (id_estudante) references tb_estudante(id_estudante),
+foreign key (id_turma) references tb_turma(id_turma)
+);
