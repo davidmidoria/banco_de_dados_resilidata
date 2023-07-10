@@ -314,6 +314,51 @@ VALUES
 (297,10),
 (298,10),
 
+INSERT INTO tb_curso(nome,descricao,carga_horaria)
+values
+('analise de dados','um curso voltado para a analise de dados aprendendo as principais tecnologias da area, além das soft skills','360 hours'),
+('frontend','um curso voltado para aprender o necessario para trabalhar como dev front end','360 hours'),
+('backend','um curso voltado para aprender como criar a parte estrutural de sites','360 hours');
+
+INSERT INTO tb_modulo(numero_modulo,id_especialidade,id_curso,skill)
+VALUES
+(0,14,1,'SOFT'),
+(1,15,1,'SOFT'),
+(2,16,1,'SOFT'),
+(3,17,1,'SOFT'),
+(4,18,1,'SOFT'),
+(5,19,1,'SOFT'),
+(0,14,2,'SOFT'),
+(1,15,2,'SOFT'),
+(2,16,2,'SOFT'),
+(3,17,2,'SOFT'),
+(4,18,2,'SOFT'),
+(5,19,2,'SOFT'),
+(0,14,3,'SOFT'),
+(1,15,3,'SOFT'),
+(2,16,3,'SOFT'),
+(3,17,3,'SOFT'),
+(4,18,3,'SOFT'),
+(5,19,3,'SOFT'),
+(0,1,1,'TECH'),
+(1,2,1,'TECH'),
+(2,3,1,'TECH'),
+(3,4,1,'TECH'),
+(4,5,1,'TECH'),
+(5,6,1,'TECH'),
+(0,1,2,'TECH'),
+(1,7,2,'TECH'),
+(2,8,2,'TECH'),
+(3,9,2,'TECH'),
+(4,10,2,'TECH'),
+(5,13,2,'TECH'),
+(0,1,3,'TECH'),
+(1,7,3,'TECH'),
+(2,8,3,'TECH'),
+(3,4,3,'TECH'),
+(4,11,3,'TECH'),
+(5,12,3,'TECH');
+
   INSERT INTO tb_facilitador_modulo_turma(id_facilitador,id_turma,id_modulo,status_modulo)
 VALUES
 (1,1,1,'CONCLUIDO'),
