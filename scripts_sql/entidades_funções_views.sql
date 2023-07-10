@@ -61,3 +61,27 @@ unique(id_estudante,id_turma),
 foreign key (id_estudante) references tb_estudante(id_estudante),
 foreign key (id_turma) references tb_turma(id_turma)
 );
+
+-- curso possui nome do curso sua descricao e o tempo dele em horas
+
+create Table tb_curso(
+  id_curso serial primary key,
+  nome varchar(100) not null,
+  descricao varchar(200),
+  carga_horaria interval
+);
+
+-- possui os diversos cursos seu numero de modulos conteudo dado a cada modulo e a sua 
+--skill que pode ser soft ou tech 
+
+create Table tb_modulo(
+  id_modulo serial primary key,
+  numero_modulo int not null,
+  id_especialidade int,
+  skill varchar(10),
+  id_curso int,
+  unique(id_especialidade,id_curso),
+  unique(numero_modulo,id_curso,skill),
+  foreign key (id_especialidade) references tb_especialidade(id_especialidade),
+  foreign key (id_curso)references tb_curso(id_curso)
+ );
