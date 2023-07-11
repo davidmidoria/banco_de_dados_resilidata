@@ -85,3 +85,35 @@ create Table tb_modulo(
   foreign key (id_especialidade) references tb_especialidade(id_especialidade),
   foreign key (id_curso)references tb_curso(id_curso)
  );
+
+-- informacoes facilitadores
+create Table tb_facilitadores (
+  id_facilitador serial primary key,
+  nome varchar(100) not null,
+  cpf varchar(14) not null,
+  data_nascimento date not null,
+  endereco varchar(200) not null,
+  telefone varchar(20) not null,
+  email varchar(100) not null
+  );
+
+-- foi decidido que o facilitador possui as habilidades para dar determinadas aulas e os modulos precisam
+-- dar essas aulas, para criar essa ligacao foi feita a tb_especialidade que pode ser tanto o conteudo do modulo
+-- quanto o conteudo que o facilitador esta apto a dar aula.  
+
+create Table tb_especialidade (
+id_especialidade serial primary key,
+nome varchar(100) not null,
+skill varchar(10) not null
+);
+
+-- criacao da interligacao entre especialidade e facilitador
+
+create table tb_especialidade_facilitador(
+id_especialidade_facilitador serial primary key,
+id_especialidade int not null,
+id_facilitador int not null,
+unique (id_especialidade,id_facilitador),
+foreign key (id_facilitador) references tb_facilitadores(id_facilitador),
+foreign key (id_especialidade) references tb_especialidade(id_especialidade)
+);
