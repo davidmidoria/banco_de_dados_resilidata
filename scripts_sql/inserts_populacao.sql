@@ -484,3 +484,74 @@ VALUES
   
 (299,10),
 (300,10);
+
+INSERT INTO tb_facilitadores(nome,cpf,data_nascimento,endereco,telefone,email)
+VALUES
+('Danilo Rafael Araújo','005.266.599-20','1956-03-14','estado:RO cidade:Cacoal rua:Village do Sol numero:950','(69) 99346-3671','danilorafaelaraujo@senhorasdaarte.com.br'),
+('Gabriel César Mateus Santos','398.341.638-19','2003-01-05','estado:CE cidade:Fortaleza rua:Rodolfo Teófilo numero:148','(85) 98111-1245','gabriel-santos91@its.jnj.com'),
+('Regina Daiane Jennifer Fernandes','815.115.656-24','1980-01-09','estado:DF cidade:Brasília rua:Samambaia Sul (Samambaia) numero:194','(61) 99129-1088','reginadaianefernandes@cbsaperfeicoamento.com.br'),
+('Diego Igor Nogueira','107.333.718-92','1989-02-05','estado:SE cidade:Aracaju rua:Zona de Expansão (Robalo) numero:397','(79) 98383-9444','diego_nogueira@valeguinchos.com.br'),
+('Ester Amanda Raimunda Lima','283.870.922-40','1984-03-24','estado:RR cidade:Boa Vista rua:Pricumã numero:584','(95) 98507-2749','ester.amanda.lima@gabrielresende.com'),
+('Alana Luiza Andrea Rodrigues','539.750.927-26','1982-07-02','estado:RN cidade:Natal rua:Planalto numero:278','(84) 99944-0076','alana.luiza.rodrigues@itatiaia.net');
+-------
+INSERT INTO tb_especialidade(nome,skill)
+values 
+('logica de programação','hard'),
+('introdução ao python','hard'),
+('p.o.o com python','hard'),
+('sql','hard'),
+('numpy e pandas','hard'),
+('tableau e ṕower bi e tableau','hard'),
+('introdução java script','hard'),
+('p.o.o java script','hard'),
+('vue js','hard'),
+('ui e ux design','hard'),
+('node js','hard'),
+('express.js','hard'),
+('html e css','hard'),
+('kambam e trello','soft'),
+('inteligencia emocional','soft'),
+('linkedim','soft'),
+('curriculo','soft'),
+('como trabalhar em grupo','soft'),
+('linguagem não agressiva','soft');
+
+
+INSERT INTO tb_especialidade_facilitador(id_facilitador,id_especialidade)
+values
+(2,14),
+(2,15),
+(2,16),
+(2,17),
+(2,18),
+(2,19),
+(1,14),
+(1,15),
+(1,16),
+(1,17),
+(1,18),
+(1,19),
+(3,1),
+(3,2),
+(3,3),
+(3,4),
+(3,5),
+(3,6),
+(4,1),
+(4,2),
+(4,3),
+(4,4),
+(4,5),
+(4,6),
+(5,1),
+(5,7),
+(5,8),
+(5,4),
+(5,11),
+(5,12),
+(6,1),
+(6,7),
+(6,8),
+(6,9),
+(6,10),
+(6,13);
