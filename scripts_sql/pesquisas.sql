@@ -40,6 +40,6 @@ SELECT *  from facilitadores_aptos
 
 /* questão numero 6 (extra)*/
 
-/*  todas as informações da turma quantidade de alunos curso  e mais .*/
-SELECT * from informacoes_turma    
+/*  todas as informações da turma quantidade de alunos curso  e quantidade de alunos que sairão do curso .*/
 
+SELECT * from informacoes_turma    
