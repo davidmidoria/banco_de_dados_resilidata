@@ -226,3 +226,4 @@ left join tb_curso c
 on c.id_curso= m.id_curso
 group by et.id_turma,t.data_inicio,t.data_termino,c.nome;
 
+ set datestyle = 'SQL, DMY';
