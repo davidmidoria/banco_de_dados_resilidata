@@ -69,7 +69,7 @@ o nosso projeto teria quê ajudar a responder algumas perguntas que eram
 
 ### visualização 
  
-como a visualização de dados pelas tabelas deixam muito a desejar, resolvemos como um extra cruar uma pequena visualização
+como a visualização de dados pelas tabelas deixam muito a desejar, resolvemos como um extra criar uma pequena visualização
 das informações principais do nosso banco de dados. 
 
 Para acessar o dashboard, clique na imagem abaixo.
@@ -84,13 +84,13 @@ Para acessar o dashboard, clique na imagem abaixo.
 * **Pâm carvalho** colaborador 
 
 #### ferramentas utilizadas
-**discord**
-**whatsapp**
-**trello**
-**canva**
-**pgadmin**
-**github**
-**tableau**
+**discord**,
+**whatsapp**,
+**trello**,
+**canva**,
+**pgadmin**,
+**github**,
+**tableau**,
 **db diagrams**
 
 Agradeço pela paciência até aqui e muito obrigado!
